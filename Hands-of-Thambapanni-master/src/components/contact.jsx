@@ -3,6 +3,8 @@ import emailjs from 'emailjs-com'
 import {Header} from "./header";
 import { db } from "../database/firebase-config"
 import { collection, addDoc } from "firebase/firestore";
+import Rate from './Rating';
+
 
 const initialState = {
     name: '',
@@ -132,11 +134,16 @@ const Contact = (props) => {
                                     racuwub@gmail.com
                                 </p>
                             </div>
+                            <div className='contact-item'>
+                                <p>Rate Us :</p>
+                                 <Rate/>
+                            </div> 
                         </div>
                         <div className='col-md-12'>
                             <div className='row'>
                                 <div className='social'>
                                     <ul>
+                                        
                                         <li>
                                             <a href={props.data ? props.data.facebook : 'https://www.facebook.com/RACUWUBadulla/'}>
                                                 <i className='fa fa-facebook'></i>

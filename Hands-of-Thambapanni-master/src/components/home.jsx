@@ -8,6 +8,7 @@ import {Header} from "./header";
 import { Navigation } from "./navigation";
 import SimpleForm from "../components/SampleForm";
 
+
 function Home() {
     return (
         <div>
